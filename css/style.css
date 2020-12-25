@@ -4,6 +4,92 @@
     outline: none;
 }
 
+
+/*
+=========================
+pop-up-form
+=========================
+*/
+
+
+/* The popup form - hidden by default */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: -55px;
+    z-index: 9;
+    width: 100%;
+    max-height: 200px;
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
+    max-width: 500px;
+    padding: 10px;
+    background-color: #131516;
+}
+
+
+/* Full-width input fields */
+
+.form-container input[type=text],
+.form-container input[type=password],
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+}
+
+
+/* When the inputs get focus, do something */
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/login button */
+
+.form-container .btn {
+    background-color: #0E878B;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: red;
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+
+/*
+====================
+popup form ends
+====================
+*/
+
 .fa-1x {
     font-size: 4rem;
     color: white;
@@ -108,6 +194,10 @@
     background-color: #8b0e0e;
 }
 
+.card {
+    margin-top: 20px;
+}
+
 .card-body {
     height: 100%;
 }
@@ -115,7 +205,18 @@
 .card-title {
     height: 20px !important;
     text-align: center;
-    line-height: 20px !important;
+}
+
+.portfolio-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card,
+.carousel-inner {
+    -webkit-box-shadow: -2px -1px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px -1px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px -1px 8px 0px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -273,12 +374,8 @@
     width: 100%;
     box-shadow: rgba(255, 255, 255, 0.356) !important;
     transition: all .3s ease-in-out !important;
-    background-color: #eff0f0 !important;
+    background-color: white !important;
     overflow: visible !important;
-}
-
-.card:hover {
-    scale: 1.3;
 }
 
 .buttons button {
@@ -366,6 +463,9 @@
         color: rgba(255, 255, 255, 0.356);
         margin-top: 30px !important;
         padding: 30px 0px;
+    }
+    .card:hover {
+        scale: 1.3;
     }
 }
 
@@ -1003,7 +1103,7 @@
     #contact {
         background-color: #131516;
         color: white;
-        height: 500px;
+        height: 700px;
     }
     .contact-container {
         padding-top: 80px;
@@ -1068,7 +1168,9 @@
         line-height: 1 !important;
         color: rgba(255, 255, 255, 0.425);
         width: 60%;
-        text-align: left;
+        display: block;
+        margin: auto;
+        text-align: center;
     }
     .light-text {
         color: rgba(255, 255, 255, 0.425);
