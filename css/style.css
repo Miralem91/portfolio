@@ -163,7 +163,7 @@ popup form ends
 
 .in-slide-div {
     padding-top: 50px;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
 }
@@ -248,6 +248,7 @@ popup form ends
     }
     .in-slide-div {
         margin-top: 150px;
+        width: 60%;
     }
     #navbar-mobile {
         display: none;
