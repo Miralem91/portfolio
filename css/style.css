@@ -1,0 +1,1099 @@
+/*HEAD - START*/
+
+* {
+    outline: none;
+}
+
+.fa-1x {
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    padding-top: 17px;
+    top: 0px;
+    width: 65px;
+    height: 55px;
+    right: 0px;
+}
+
+.fab,
+.fa-github {
+    color: white !important;
+}
+
+.navbar-dark {
+    width: 100% !important;
+}
+
+#navbar-desktop {
+    display: none;
+}
+
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+
+.dark-blue-text {
+    color: #0A38F5;
+}
+
+.dark-pink-text {
+    color: #AC003A;
+}
+
+.dark-amber-text {
+    color: #ff6f00;
+}
+
+.dark-teal-text {
+    color: #004d40;
+}
+
+.header-container {
+    background-color: #050506;
+    height: 500px;
+}
+
+.navbar-brand {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.first-slide {
+    width: 200px;
+    height: auto;
+}
+
+.slide-title {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.slide-text {
+    color: rgba(255, 255, 255, 0.356);
+    margin-bottom: 20px;
+}
+
+.in-slide-div {
+    padding-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.in-slide-color {
+    color: #8b0e0e;
+}
+
+.in-slide-div button {
+    background-color: #8b0e0e;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.in-slide-div button:hover {
+    background-color: #8b0e0e;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.carousel-indicators li {
+    background-color: #8b0e0e;
+    position: absolute;
+    padding: 2px;
+}
+
+.carousel-indicators .active {
+    background-color: #8b0e0e;
+}
+
+.card-body {
+    height: 100%;
+}
+
+.card-title {
+    height: 20px !important;
+    text-align: center;
+    line-height: 20px !important;
+}
+
+
+/*HEAD - ENDS**************************************************************************/
+
+
+/*HEAD -MEDIUM DEVICES START********************************************************************/
+
+@media only screen and (min-width:992px) {
+    .fa-1x {
+        font-size: 4rem;
+        color: white;
+        background-color: #8b0e0e;
+        position: absolute;
+        padding-top: 17px;
+        top: 0px;
+        width: 65px;
+        height: 55px;
+        right: 0px;
+    }
+    .header-container {
+        height: 100vh;
+    }
+    .navbar-toggler.toggler-example {
+        cursor: pointer;
+    }
+    .brand-desktop {
+        padding-left: 100px;
+    }
+    .in-slide-div {
+        margin-top: 150px;
+    }
+    #navbar-mobile {
+        display: none;
+        opacity: 0 !important;
+    }
+    .container-center {
+        width: 80% !important;
+        margin: 0 auto;
+    }
+    #navbar-desktop {
+        display: block;
+    }
+    #navbar-desktop ul {
+        display: inline;
+        padding-left: 50px;
+        margin-top: 10px !important;
+    }
+    #navbar-desktop ul li {
+        list-style: none;
+        display: inline;
+        color: rgba(255, 255, 255, 0.425);
+        padding-right: 10px;
+        line-height: 20px;
+        padding-top: 20px;
+    }
+    #navbar-desktop ul li a {
+        color: rgba(255, 255, 255, 0.425);
+        text-decoration: none;
+    }
+    .carousel-item {
+        height: 650px;
+    }
+    #navbar-desktop ul li a:hover {
+        background-color: #8b0e0e;
+        padding-bottom: 25px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-weight: bolder;
+        color: white !important;
+    }
+    .navbar-brand {
+        font-size: 2.5rem;
+        color: white;
+        font-weight: bolder;
+    }
+    .slide-title {
+        color: white;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+}
+
+
+/*HEAD -MEDIUM DEVICES ENDS********************************************************************/
+
+
+/*SERVICES - START*/
+
+#services {
+    background-color: #131516;
+    padding: 20px;
+    color: white;
+}
+
+.section-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.section-color {
+    color: #8b0e0e;
+    line-height: 0.1;
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.section-text {
+    color: rgba(255, 255, 255, 0.356);
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.services-ol {
+    /*list-style-type:decimal-leading-zero;*/
+    list-style: none;
+    padding-left: 0px;
+    counter-reset: item;
+}
+
+.services-ol li {
+    display: table;
+    counter-increment: item;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-top: 40px;
+}
+
+.services-ol li:before {
+    counter-increment: li;
+    content: counter(item, decimal-leading-zero);
+    color: #d82d2d;
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+
+.services-ol p {
+    color: rgba(255, 255, 255, 0.356);
+    margin-top: 30px !important;
+    padding: 30px 0px;
+}
+
+.buttons {
+    width: 60%;
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: space-around !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.card {
+    width: 100%;
+    box-shadow: rgba(255, 255, 255, 0.356) !important;
+    transition: all .3s ease-in-out !important;
+    background-color: #eff0f0 !important;
+    overflow: visible !important;
+}
+
+.card:hover {
+    scale: 1.3;
+}
+
+.buttons button {
+    color: white;
+}
+
+
+/*SERVICES - ENDS*/
+
+
+/*SERVICES MEDIUM DEVICES - START*/
+
+@media only screen and (min-width: 992px) {
+    #services {
+        background-color: #131516;
+        padding: 20px;
+        color: white;
+    }
+    .section-title {
+        color: white;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .div-float-left {
+        display: block;
+        width: 40%;
+        float: left;
+        padding-bottom: 20px;
+    }
+    .div-float-right {
+        display: block;
+        width: 60%;
+        float: right;
+        padding-bottom: 20px;
+    }
+    .service-flex {
+        display: block;
+        flex-direction: column;
+    }
+    .services-intro {
+        height: 200px;
+    }
+    .three-items-one,
+    .three-items-two {
+        display: flex;
+        width: 100% !important;
+        justify-content: space-evenly;
+    }
+    .services-item {
+        width: 30%;
+    }
+    .section-color {
+        color: #d82d2d;
+        line-height: 0.1;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .section-text {
+        color: rgba(255, 255, 255, 0.356);
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .services-ol {
+        /*list-style-type:decimal-leading-zero;*/
+        list-style: none;
+        padding-left: 0px;
+        counter-reset: item;
+    }
+    .services-ol li {
+        display: table;
+        counter-increment: item;
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding-top: 40px;
+    }
+    .services-ol li:before {
+        counter-increment: li;
+        content: counter(item, decimal-leading-zero);
+        color: #d82d2d;
+        padding-right: 10px;
+        margin-bottom: 30px;
+    }
+    .services-ol span {
+        color: rgba(255, 255, 255, 0.356);
+        margin-top: 30px !important;
+        padding: 30px 0px;
+    }
+}
+
+
+/*SERVICES MEDIUM DEVICES - ENDS*/
+
+
+/*PORTFOLIO START*/
+
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 767px) {
+    .project-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .project1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    .project2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+    }
+    .project3 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+
+/*PORTFOLIO ENDS*/
+
+
+/*PORTFOLIO  medium devices start*/
+
+@media only screen and (min-width: 992px) {
+    .portfolio-images {
+        padding-bottom: 50px;
+    }
+    #portfolio {
+        padding-top: 100px;
+        background-color: #eff0f0;
+    }
+    .portfolio-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .section-content {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .card {
+        width: 300px;
+        margin: auto;
+        margin: 20px;
+    }
+    .dark-bg {
+        background-color: black;
+        color: white;
+    }
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*PORTFOLIO  medium devices ends*/
+
+
+/*JOURNAL START*/
+
+#journal-mobile {
+    display: block;
+}
+
+#journal-desktop {
+    display: none;
+}
+
+#journal {
+    padding-top: 50px;
+    background-color: #8b0e0e;
+    color: white;
+}
+
+.journal-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.white-color-p {
+    line-height: 0.1;
+}
+
+.article {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.post-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.post-date {
+    line-height: 0.1;
+}
+
+.post-content {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.514);
+    ;
+}
+
+.read-more {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.read-more:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*JOURNAL ENDS*/
+
+
+/*JOURNAL DESKTOP START*/
+
+@media only screen and (min-width: 992px) {
+    #journal-mobile {
+        display: none;
+    }
+    #journal-desktop {
+        display: block;
+    }
+    .article {
+        display: flex;
+    }
+    .article-image {
+        width: 70px;
+        height: 70px;
+        width: 10%;
+    }
+    .article-image img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+    .article-content {
+        width: 60%;
+    }
+    .aticle-date {
+        width: 200px;
+    }
+    .post-date {
+        width: 100%;
+    }
+}
+
+
+/*JOURNAL DESKTOP ENDS*/
+
+
+/*ABOUT-US START*/
+
+.about-us-title {
+    padding-top: 100px;
+    font-size: 2rem;
+}
+
+.about-us-subtitle {
+    font-size: 1.5rem;
+}
+
+.about-us-section {
+    padding-bottom: 50px;
+}
+
+.uppercase-colored {
+    color: #11abb0;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.meet-the-team {
+    font-size: 1.3rem;
+}
+
+.member-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.team-member {
+    width: 90%;
+    padding-bottom: 50px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.fab {
+    letter-spacing: 10px;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+.member-name {
+    margin-bottom: 0!important;
+    color: #11abb0;
+    font-weight: 500;
+}
+
+.member-role {
+    color: rgba(0, 0, 0, 0.384);
+}
+
+.card {
+    border: none!important;
+    width: 90% !important;
+}
+
+.small-rounded {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 20px;
+}
+
+.testimonial-body {
+    display: block;
+    width: 200px !important;
+    margin-left: 20px !important;
+}
+
+#testimonial-desktop {
+    display: none;
+}
+
+.testimonial-intro {
+    padding-left: 50px;
+}
+
+.testimonials-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.testimonial-title {
+    display: block;
+    margin-left: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.card-text {
+    width: 80%;
+    font-size: smaller;
+}
+
+
+/*ABOUT US ENDS*/
+
+
+/*ABOUT US MEDIUM DEVICES START*/
+
+@media only screen and (min-width: 992px) {
+    .about-us-title {
+        padding-top: 0px;
+        font-size: 2rem;
+    }
+    .about-us-subtitle {
+        font-size: 1.5rem;
+        width: 50% !important;
+    }
+    .about-us-subtitle-wrap {
+        display: flex;
+        width: 100%;
+        height: 100px !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .about-us-section {
+        padding-bottom: 50px;
+        width: 20%;
+    }
+    #about-us-intro {
+        padding-top: 100px;
+        padding-right: 0px;
+        padding-left: 0px;
+        height: 200px;
+    }
+    .about-us-flex {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 0 !important;
+    }
+    .uppercase-colored {
+        color: #11abb0;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .meet-the-team {
+        font-size: 1.5rem;
+        padding-left: 0px;
+    }
+    .meet-the-team-intro {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .member-img {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    .all-members {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .team-member {
+        width: 25%;
+        padding-bottom: 50px;
+        text-align: left;
+        margin: 0 auto;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .fab {
+        letter-spacing: 10px;
+        color: rgba(0, 0, 0, 0.637);
+    }
+    .member-name {
+        margin-bottom: 0!important;
+        color: #11abb0;
+        font-weight: 500;
+    }
+    .member-role {
+        color: rgba(0, 0, 0, 0.486);
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    #testimonial-mobile {
+        display: none;
+    }
+    #testimonial-desktop {
+        display: block;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .cards-three-items {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        display: flex;
+    }
+    .card {
+        border: none!important;
+        width: 90% !important;
+    }
+    .card-inline {
+        width: 33.33%;
+    }
+    .carousel-item {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .small-rounded {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        float: left;
+        margin-right: 20px;
+    }
+    .testimonial-body {
+        display: block;
+        width: 200px !important;
+        margin-left: 20px !important;
+        margin-bottom: 30px;
+    }
+    .testimonial-intro {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .testimonials-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .testimonial-title {
+        display: block;
+        margin-left: 50px;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+    .card-text {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+}
+
+
+/*ABOUT US MEDIUM DEVICES ENDS*/
+
+
+/*ADS START*/
+
+#ads {
+    color: white;
+    background-color: #0e878b
+}
+
+.ads-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.ad-title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.ad-text {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.425);
+    line-height: 1.2;
+    padding-bottom: 30px;
+}
+
+.ad-button {
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.white {
+    color: white;
+}
+
+
+/*ADS ENDS*/
+
+
+/*ADS MEDIUM DEVICE START*/
+
+@media only screen and (min-width: 992px) {
+    .ad-title {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 600;
+    }
+    .ad-text {
+        margin: 0 auto;
+        display: block;
+        width: 55%;
+        font-size: 1.2rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.425);
+        line-height: 1.2;
+        padding-bottom: 30px;
+    }
+    .ad-button {
+        width: 50%;
+        height: 50px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        padding: 10px;
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .white {
+        color: white;
+    }
+}
+
+
+/*ADS  MEDIUM DEVICE ENDS*/
+
+
+/*CONTACT-START*/
+
+#contact {
+    background-color: #131516;
+    color: white;
+}
+
+.contact-container {
+    padding-top: 80px;
+    width: 90% !important;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.contact-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2 !important;
+}
+
+.contact-color {
+    line-height: 1.2 !important;
+}
+
+.contact-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.contact-button {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    background-color: #0e878b;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 40px !important;
+}
+
+.icons-white {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: block;
+    width: 50%;
+    text-align: right;
+    height: 10px;
+    margin: auto;
+}
+
+.icons-white i {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copy-right {
+    margin-top: 0px !important;
+    line-height: 1.5 !important;
+    color: rgba(255, 255, 255, 0.425);
+    display: block;
+    text-align: center;
+}
+
+.light-text {
+    color: rgba(255, 255, 255, 0.425);
+    line-height: 0.5;
+}
+
+.fas {
+    padding-bottom: 20px;
+}
+
+.find-us-text {
+    padding-left: 35px;
+}
+
+.icon-text {
+    padding-left: 20px;
+}
+
+#footer {
+    background-color: #131516;
+    color: white;
+    height: 100px;
+}
+
+#footer-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*CONTACT-ENDS*/
+
+
+/*CONTACT- MEDIUM DEVICES START*/
+
+@media only screen and (min-width: 992px) {
+    #contact {
+        background-color: #131516;
+        color: white;
+        height: 500px;
+    }
+    .contact-container {
+        padding-top: 80px;
+        width: 100% !important;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .contact-intro {
+        width: 50%;
+        float: left;
+    }
+    .contact-location-phone {
+        width: 50%;
+        float: right;
+        padding-left: 80px;
+    }
+    .contact-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.2 !important;
+    }
+    .contact-color {
+        line-height: 1.2 !important;
+    }
+    .contact-text {
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: justify;
+        margin-bottom: 50px;
+        width: 80%;
+    }
+    .contact-button {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 50px;
+        background-color: #0e878b;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        padding: 10px;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 40px !important;
+    }
+    .icons-white {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: #131516;
+        width: 40%;
+    }
+    .icons-white i {
+        color: white;
+    }
+    .copy-right {
+        margin-top: 0px !important;
+        line-height: 1 !important;
+        color: rgba(255, 255, 255, 0.425);
+        width: 60%;
+        text-align: left;
+    }
+    .light-text {
+        color: rgba(255, 255, 255, 0.425);
+        line-height: 0.5;
+    }
+    .fas {
+        padding-bottom: 20px;
+    }
+    .find-us-text {
+        padding-left: 35px;
+    }
+    .icon-text {
+        padding-left: 20px;
+    }
+    #footer {
+        background-color: #131516;
+        color: white;
+        height: 100px;
+    }
+    #footer-content {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+/*CONTACT-MEDIUM DEVICES ENDS*/
